@@ -1,0 +1,7 @@
+{
+  "id": "642",
+  "title": "Design Search Autocomplete System",
+  "titleSlug": "design-search-autocomplete-system",
+  "difficulty": "Hard",
+  "tags": "Depth-First Search, Design, Trie, String, Data Stream, Sorting, Heap (Priority Queue)"
+}

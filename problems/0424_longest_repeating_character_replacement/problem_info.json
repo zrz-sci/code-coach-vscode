@@ -1,0 +1,7 @@
+{
+  "id": "424",
+  "title": "Longest Repeating Character Replacement",
+  "titleSlug": "longest-repeating-character-replacement",
+  "difficulty": "Medium",
+  "tags": "Hash Table, String, Sliding Window"
+}

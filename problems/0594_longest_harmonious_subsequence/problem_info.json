@@ -1,0 +1,7 @@
+{
+  "id": "594",
+  "title": "Longest Harmonious Subsequence",
+  "titleSlug": "longest-harmonious-subsequence",
+  "difficulty": "Easy",
+  "tags": "Array, Hash Table, Counting, Sorting, Sliding Window"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "407",
+  "title": "Trapping Rain Water II",
+  "titleSlug": "trapping-rain-water-ii",
+  "difficulty": "Hard",
+  "tags": "Breadth-First Search, Array, Matrix, Heap (Priority Queue)"
+}

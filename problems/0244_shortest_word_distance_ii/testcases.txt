@@ -1,0 +1,2 @@
+["WordDistance","shortest","shortest"]
+[[["practice","makes","perfect","coding","makes"]],["coding","practice"],["makes","coding"]]

@@ -1,0 +1,7 @@
+{
+  "id": "497",
+  "title": "Random Point in Non-overlapping Rectangles",
+  "titleSlug": "random-point-in-non-overlapping-rectangles",
+  "difficulty": "Medium",
+  "tags": "Reservoir Sampling, Array, Math, Binary Search, Ordered Set, Prefix Sum, Randomized"
+}

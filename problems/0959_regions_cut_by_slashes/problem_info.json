@@ -1,0 +1,7 @@
+{
+  "id": "959",
+  "title": "Regions Cut By Slashes",
+  "titleSlug": "regions-cut-by-slashes",
+  "difficulty": "Medium",
+  "tags": "Depth-First Search, Breadth-First Search, Union Find, Array, Hash Table, Matrix"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "692",
+  "title": "Top K Frequent Words",
+  "titleSlug": "top-k-frequent-words",
+  "difficulty": "Medium",
+  "tags": "Trie, Array, Hash Table, String, Bucket Sort, Counting, Sorting, Heap (Priority Queue)"
+}

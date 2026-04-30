@@ -1,0 +1,8 @@
+"ABCABC"
+"ABC"
+"ABABAB"
+"ABAB"
+"LEET"
+"CODE"
+"AAAAAB"
+"AAA"

@@ -1,0 +1,7 @@
+{
+  "id": "1293",
+  "title": "Shortest Path in a Grid with Obstacles Elimination",
+  "titleSlug": "shortest-path-in-a-grid-with-obstacles-elimination",
+  "difficulty": "Hard",
+  "tags": "Breadth-First Search, Array, Matrix"
+}

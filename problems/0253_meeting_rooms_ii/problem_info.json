@@ -1,0 +1,7 @@
+{
+  "id": "253",
+  "title": "Meeting Rooms II",
+  "titleSlug": "meeting-rooms-ii",
+  "difficulty": "Medium",
+  "tags": "Greedy, Array, Two Pointers, Prefix Sum, Sorting, Heap (Priority Queue)"
+}

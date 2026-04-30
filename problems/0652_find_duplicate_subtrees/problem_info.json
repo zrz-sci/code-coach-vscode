@@ -1,0 +1,7 @@
+{
+  "id": "652",
+  "title": "Find Duplicate Subtrees",
+  "titleSlug": "find-duplicate-subtrees",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Hash Table, Binary Tree"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "42",
+  "title": "Trapping Rain Water",
+  "titleSlug": "trapping-rain-water",
+  "difficulty": "Hard",
+  "tags": "Stack, Array, Two Pointers, Dynamic Programming, Monotonic Stack"
+}

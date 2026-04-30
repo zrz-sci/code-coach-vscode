@@ -1,0 +1,7 @@
+{
+  "id": "317",
+  "title": "Shortest Distance from All Buildings",
+  "titleSlug": "shortest-distance-from-all-buildings",
+  "difficulty": "Hard",
+  "tags": "Breadth-First Search, Array, Matrix"
+}

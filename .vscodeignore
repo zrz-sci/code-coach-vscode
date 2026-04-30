@@ -1,0 +1,16 @@
+# Exclude everything first, then include what we need
+**
+!package.json
+!README.md
+!LICENSE
+!CHANGELOG.md
+!out/**/*.js
+!resources/**
+!python/leetcode_tool.py
+!python/api_client.py
+!python/browser_login.py
+!python/config.py
+!python/fetch_and_generate.py
+!python/template_generator.py
+!python/teaching_skills.md
+!python/requirements.txt

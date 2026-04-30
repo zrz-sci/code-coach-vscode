@@ -1,0 +1,7 @@
+{
+  "id": "1044",
+  "title": "Longest Duplicate Substring",
+  "titleSlug": "longest-duplicate-substring",
+  "difficulty": "Hard",
+  "tags": "String, Binary Search, Suffix Array, Sliding Window, Hash Function, Rolling Hash"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "1353",
+  "title": "Maximum Number of Events That Can Be Attended",
+  "titleSlug": "maximum-number-of-events-that-can-be-attended",
+  "difficulty": "Medium",
+  "tags": "Greedy, Array, Sorting, Heap (Priority Queue)"
+}

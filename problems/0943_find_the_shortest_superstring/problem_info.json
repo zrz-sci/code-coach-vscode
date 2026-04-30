@@ -1,0 +1,7 @@
+{
+  "id": "943",
+  "title": "Find the Shortest Superstring",
+  "titleSlug": "find-the-shortest-superstring",
+  "difficulty": "Hard",
+  "tags": "Bit Manipulation, Array, String, Dynamic Programming, Bitmask"
+}

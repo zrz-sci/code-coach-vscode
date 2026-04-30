@@ -1,0 +1,7 @@
+{
+  "id": "687",
+  "title": "Longest Univalue Path",
+  "titleSlug": "longest-univalue-path",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Binary Tree"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "139",
+  "title": "Word Break",
+  "titleSlug": "word-break",
+  "difficulty": "Medium",
+  "tags": "Trie, Memoization, Array, Hash Table, String, Dynamic Programming"
+}

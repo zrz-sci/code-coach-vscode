@@ -1,0 +1,2 @@
+["area","lead","wall","lady","ball"]
+["abat","baba","atan","atal"]

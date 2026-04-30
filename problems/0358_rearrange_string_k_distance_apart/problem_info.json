@@ -1,0 +1,7 @@
+{
+  "id": "358",
+  "title": "Rearrange String k Distance Apart",
+  "titleSlug": "rearrange-string-k-distance-apart",
+  "difficulty": "Hard",
+  "tags": "Greedy, Hash Table, String, Counting, Sorting, Heap (Priority Queue)"
+}

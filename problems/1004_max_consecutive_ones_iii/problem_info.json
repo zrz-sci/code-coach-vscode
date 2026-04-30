@@ -1,0 +1,7 @@
+{
+  "id": "1004",
+  "title": "Max Consecutive Ones III",
+  "titleSlug": "max-consecutive-ones-iii",
+  "difficulty": "Medium",
+  "tags": "Array, Binary Search, Prefix Sum, Sliding Window"
+}

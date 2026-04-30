@@ -1,0 +1,7 @@
+{
+  "id": "536",
+  "title": "Construct Binary Tree from String",
+  "titleSlug": "construct-binary-tree-from-string",
+  "difficulty": "Medium",
+  "tags": "Stack, Tree, Depth-First Search, String, Binary Tree"
+}

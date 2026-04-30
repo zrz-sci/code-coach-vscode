@@ -1,0 +1,7 @@
+{
+  "id": "2448",
+  "title": "Minimum Cost to Make Array Equal",
+  "titleSlug": "minimum-cost-to-make-array-equal",
+  "difficulty": "Hard",
+  "tags": "Greedy, Array, Binary Search, Prefix Sum, Sorting"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "114",
+  "title": "Flatten Binary Tree to Linked List",
+  "titleSlug": "flatten-binary-tree-to-linked-list",
+  "difficulty": "Medium",
+  "tags": "Stack, Tree, Depth-First Search, Linked List, Binary Tree"
+}

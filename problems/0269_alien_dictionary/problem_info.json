@@ -1,0 +1,7 @@
+{
+  "id": "269",
+  "title": "Alien Dictionary",
+  "titleSlug": "alien-dictionary",
+  "difficulty": "Hard",
+  "tags": "Depth-First Search, Breadth-First Search, Graph, Topological Sort, Array, String"
+}

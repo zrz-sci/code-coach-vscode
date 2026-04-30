@@ -1,0 +1,7 @@
+{
+  "id": "460",
+  "title": "LFU Cache",
+  "titleSlug": "lfu-cache",
+  "difficulty": "Hard",
+  "tags": "Design, Hash Table, Linked List, Doubly-Linked List"
+}

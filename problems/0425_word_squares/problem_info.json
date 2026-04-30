@@ -1,0 +1,7 @@
+{
+  "id": "425",
+  "title": "Word Squares",
+  "titleSlug": "word-squares",
+  "difficulty": "Hard",
+  "tags": "Trie, Array, String, Backtracking"
+}

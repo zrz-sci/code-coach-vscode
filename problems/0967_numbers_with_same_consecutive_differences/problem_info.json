@@ -1,0 +1,7 @@
+{
+  "id": "967",
+  "title": "Numbers With Same Consecutive Differences",
+  "titleSlug": "numbers-with-same-consecutive-differences",
+  "difficulty": "Medium",
+  "tags": "Breadth-First Search, Backtracking"
+}

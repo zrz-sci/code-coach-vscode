@@ -1,0 +1,7 @@
+{
+  "id": "862",
+  "title": "Shortest Subarray with Sum at Least K",
+  "titleSlug": "shortest-subarray-with-sum-at-least-k",
+  "difficulty": "Hard",
+  "tags": "Queue, Array, Binary Search, Prefix Sum, Sliding Window, Monotonic Queue, Heap (Priority Queue)"
+}

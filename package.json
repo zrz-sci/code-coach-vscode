@@ -1,0 +1,392 @@
+{
+  "name": "code-coach",
+  "displayName": "Code Coach",
+  "description": "Practice coding problems with AI-powered hints, local testing, and bilingual support (中英双语)",
+  "version": "1.0.0",
+  "publisher": "code-coach",
+  "license": "MIT",
+  "author": "Code Coach Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zrz-sci/code-coach-vscode.git"
+  },
+  "homepage": "https://github.com/zrz-sci/code-coach-vscode",
+  "bugs": {
+    "url": "https://github.com/zrz-sci/code-coach-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "icon": "resources/leetcode.png",
+  "keywords": [
+    "algorithm",
+    "interview",
+    "coding",
+    "practice",
+    "competitive"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "leetcode-explorer",
+          "title": "LeetCode",
+          "icon": "resources/leetcode.svg"
+        }
+      ]
+    },
+    "views": {
+      "leetcode-explorer": [
+        {
+          "id": "leetcode-session",
+          "name": "Session"
+        },
+        {
+          "id": "leetcode-problems",
+          "name": "Problems"
+        },
+        {
+          "id": "leetcode-favorites",
+          "name": "My Favorites"
+        },
+        {
+          "id": "leetcode-my-lists",
+          "name": "My Lists"
+        },
+        {
+          "id": "leetcode-my-solutions",
+          "name": "My Solutions"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "leetcode.switchSite",
+        "title": "Switch Site (US/CN)",
+        "icon": "$(globe)"
+      },
+      {
+        "command": "leetcode.login",
+        "title": "Login",
+        "icon": "$(sign-in)"
+      },
+      {
+        "command": "leetcode.browserLogin",
+        "title": "Login (Browser)",
+        "icon": "$(sign-in)"
+      },
+      {
+        "command": "leetcode.logout",
+        "title": "Logout",
+        "icon": "$(sign-out)"
+      },
+      {
+        "command": "leetcode.settings",
+        "title": "Settings",
+        "icon": "$(gear)"
+      },
+      {
+        "command": "leetcode.refresh",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "leetcode.fetchProblem",
+        "title": "Fetch Problem",
+        "icon": "$(cloud-download)"
+      },
+      {
+        "command": "leetcode.searchProblem",
+        "title": "Search Problems",
+        "icon": "$(search)"
+      },
+      {
+        "command": "leetcode.testSolution",
+        "title": "Test Solution Locally",
+        "icon": "$(play)"
+      },
+      {
+        "command": "leetcode.runSolution",
+        "title": "Run on LeetCode",
+        "icon": "$(run)"
+      },
+      {
+        "command": "leetcode.submitSolution",
+        "title": "Submit Solution",
+        "icon": "$(cloud-upload)"
+      },
+      {
+        "command": "leetcode.openProblem",
+        "title": "Open Problem",
+        "icon": "$(file-code)"
+      },
+      {
+        "command": "leetcode.showProblemDescription",
+        "title": "Show Problem Description",
+        "icon": "$(book)"
+      },
+      {
+        "command": "leetcode.filterByDifficulty",
+        "title": "Filter by Difficulty",
+        "icon": "$(filter)"
+      },
+      {
+        "command": "leetcode.refreshFavorites",
+        "title": "Refresh Favorites",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "leetcode.openProblemFromFavorite",
+        "title": "Open Problem",
+        "icon": "$(file-code)"
+      },
+      {
+        "command": "leetcode.resetSolution",
+        "title": "Reset Solution (Re-do) / 重做",
+        "icon": "$(debug-restart)"
+      },
+      {
+        "command": "leetcode.clearSolution",
+        "title": "Delete Solution / 删除",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "leetcode.clearAllSolutions",
+        "title": "Clear All Solutions",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "leetcode.refreshSolutions",
+        "title": "Refresh Solutions",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "leetcode.refreshMyLists",
+        "title": "Refresh My Lists",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "leetcode.generateHints",
+        "title": "Generate AI Hints & Reference / 生成提示",
+        "icon": "$(lightbulb)"
+      },
+      {
+        "command": "leetcode.addToFavorite",
+        "title": "Add to Favorite / 加入收藏",
+        "icon": "$(star)"
+      },
+      {
+        "command": "leetcode.nextProblem",
+        "title": "Next Problem / 下一题",
+        "icon": "$(play)"
+      },
+      {
+        "command": "leetcode.startMock",
+        "title": "Start Mock Interview / 模拟面试",
+        "icon": "$(beaker)"
+      },
+      {
+        "command": "leetcode.endMock",
+        "title": "End Mock Interview / 结束面试",
+        "icon": "$(debug-stop)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "leetcode.switchSite",
+          "when": "view == leetcode-session",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.browserLogin",
+          "when": "view == leetcode-session",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.startMock",
+          "when": "view == leetcode-session",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.refresh",
+          "when": "view == leetcode-problems",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.searchProblem",
+          "when": "view == leetcode-problems",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.filterByDifficulty",
+          "when": "view == leetcode-problems",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.refreshFavorites",
+          "when": "view == leetcode-favorites",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.refreshMyLists",
+          "when": "view == leetcode-my-lists",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.refreshSolutions",
+          "when": "view == leetcode-my-solutions",
+          "group": "navigation"
+        },
+        {
+          "command": "leetcode.clearAllSolutions",
+          "when": "view == leetcode-my-solutions",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "leetcode.openProblem",
+          "when": "view == leetcode-problems && viewItem == problem",
+          "group": "inline"
+        },
+        {
+          "command": "leetcode.showProblemDescription",
+          "when": "view == leetcode-problems && viewItem == problem",
+          "group": "inline"
+        },
+        {
+          "command": "leetcode.addToFavorite",
+          "when": "view == leetcode-problems && viewItem == problem",
+          "group": "inline"
+        },
+        {
+          "command": "leetcode.resetSolution",
+          "when": "view == leetcode-my-solutions && viewItem == solution",
+          "group": "inline"
+        },
+        {
+          "command": "leetcode.generateHints",
+          "when": "view == leetcode-my-solutions && viewItem == solution",
+          "group": "inline"
+        },
+        {
+          "command": "leetcode.resetSolution",
+          "when": "view == leetcode-favorites && viewItem == favoriteProblem",
+          "group": "inline"
+        },
+        {
+          "command": "leetcode.generateHints",
+          "when": "view == leetcode-favorites && viewItem == favoriteProblem",
+          "group": "inline"
+        },
+        {
+          "command": "leetcode.clearSolution",
+          "when": "view == leetcode-my-solutions && viewItem == solution",
+          "group": "context"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "leetcode.testSolution",
+          "when": "resourceExtname == .cpp",
+          "group": "navigation@1"
+        },
+        {
+          "command": "leetcode.runSolution",
+          "when": "resourceExtname == .cpp",
+          "group": "navigation@2"
+        },
+        {
+          "command": "leetcode.submitSolution",
+          "when": "resourceExtname == .cpp",
+          "group": "navigation@3"
+        },
+        {
+          "command": "leetcode.generateHints",
+          "when": "resourceExtname == .cpp",
+          "group": "navigation@4"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Code Coach",
+      "properties": {
+        "leetcode.site": {
+          "type": "string",
+          "default": "us",
+          "enum": ["us", "cn"],
+          "enumDescriptions": [
+            "LeetCode US (leetcode.com)",
+            "LeetCode China / 力扣 (leetcode.cn)"
+          ],
+          "description": "Select LeetCode site"
+        },
+        "leetcode.pythonPath": {
+          "type": "string",
+          "default": "python3",
+          "description": "Path to Python interpreter"
+        },
+        "leetcode.proxy": {
+          "type": "string",
+          "default": "",
+          "description": "Proxy server URL (e.g., http://127.0.0.1:7890)"
+        },
+        "leetcode.anthropicApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Anthropic API key for AI-generated hints & reference solutions (sk-ant-...)"
+        },
+        "leetcode.problemsDir": {
+          "type": "string",
+          "default": "",
+          "description": "Directory to store problems (default: ~/lc-practice)"
+        },
+        "leetcode.hideProblemTitle": {
+          "type": "boolean",
+          "default": false,
+          "description": "Hide problem title in description view (for blind practice) / 隐藏题目标题（盲练模式）"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "leetcode.testSolution",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t",
+        "when": "editorTextFocus && resourceExtname == .cpp"
+      },
+      {
+        "command": "leetcode.runSolution",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorTextFocus && resourceExtname == .cpp"
+      },
+      {
+        "command": "leetcode.submitSolution",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s",
+        "when": "editorTextFocus && resourceExtname == .cpp"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "14",
+  "title": "Longest Common Prefix",
+  "titleSlug": "longest-common-prefix",
+  "difficulty": "Easy",
+  "tags": "Trie, Array, String"
+}

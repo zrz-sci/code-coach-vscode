@@ -1,0 +1,7 @@
+{
+  "id": "402",
+  "title": "Remove K Digits",
+  "titleSlug": "remove-k-digits",
+  "difficulty": "Medium",
+  "tags": "Stack, Greedy, String, Monotonic Stack"
+}

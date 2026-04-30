@@ -1,0 +1,7 @@
+{
+  "id": "988",
+  "title": "Smallest String Starting From Leaf",
+  "titleSlug": "smallest-string-starting-from-leaf",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, String, Backtracking, Binary Tree"
+}

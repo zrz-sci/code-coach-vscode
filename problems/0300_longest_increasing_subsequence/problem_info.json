@@ -1,0 +1,7 @@
+{
+  "id": "300",
+  "title": "Longest Increasing Subsequence",
+  "titleSlug": "longest-increasing-subsequence",
+  "difficulty": "Medium",
+  "tags": "Array, Binary Search, Dynamic Programming"
+}

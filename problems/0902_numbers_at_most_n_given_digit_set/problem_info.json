@@ -1,0 +1,7 @@
+{
+  "id": "902",
+  "title": "Numbers At Most N Given Digit Set",
+  "titleSlug": "numbers-at-most-n-given-digit-set",
+  "difficulty": "Hard",
+  "tags": "Array, Math, String, Binary Search, Dynamic Programming"
+}

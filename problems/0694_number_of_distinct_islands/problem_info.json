@@ -1,0 +1,7 @@
+{
+  "id": "694",
+  "title": "Number of Distinct Islands",
+  "titleSlug": "number-of-distinct-islands",
+  "difficulty": "Medium",
+  "tags": "Depth-First Search, Breadth-First Search, Union Find, Array, Hash Table, Matrix, Sorting, Hash Function"
+}

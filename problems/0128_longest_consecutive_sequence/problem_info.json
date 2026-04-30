@@ -1,0 +1,7 @@
+{
+  "id": "128",
+  "title": "Longest Consecutive Sequence",
+  "titleSlug": "longest-consecutive-sequence",
+  "difficulty": "Medium",
+  "tags": "Union Find, Array, Hash Table"
+}

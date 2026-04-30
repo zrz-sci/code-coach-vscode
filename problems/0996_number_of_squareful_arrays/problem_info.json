@@ -1,0 +1,7 @@
+{
+  "id": "996",
+  "title": "Number of Squareful Arrays",
+  "titleSlug": "number-of-squareful-arrays",
+  "difficulty": "Hard",
+  "tags": "Bit Manipulation, Array, Hash Table, Math, Dynamic Programming, Backtracking, Bitmask"
+}

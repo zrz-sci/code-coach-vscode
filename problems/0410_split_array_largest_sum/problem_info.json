@@ -1,0 +1,7 @@
+{
+  "id": "410",
+  "title": "Split Array Largest Sum",
+  "titleSlug": "split-array-largest-sum",
+  "difficulty": "Hard",
+  "tags": "Greedy, Array, Binary Search, Dynamic Programming, Prefix Sum"
+}

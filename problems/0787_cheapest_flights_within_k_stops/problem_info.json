@@ -1,0 +1,7 @@
+{
+  "id": "787",
+  "title": "Cheapest Flights Within K Stops",
+  "titleSlug": "cheapest-flights-within-k-stops",
+  "difficulty": "Medium",
+  "tags": "Depth-First Search, Breadth-First Search, Graph, Dynamic Programming, Shortest Path, Heap (Priority Queue)"
+}

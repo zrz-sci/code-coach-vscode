@@ -1,0 +1,7 @@
+{
+  "id": "1703",
+  "title": "Minimum Adjacent Swaps for K Consecutive Ones",
+  "titleSlug": "minimum-adjacent-swaps-for-k-consecutive-ones",
+  "difficulty": "Hard",
+  "tags": "Greedy, Array, Prefix Sum, Sliding Window"
+}

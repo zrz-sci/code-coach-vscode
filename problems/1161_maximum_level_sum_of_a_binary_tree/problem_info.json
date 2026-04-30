@@ -1,0 +1,7 @@
+{
+  "id": "1161",
+  "title": "Maximum Level Sum of a Binary Tree",
+  "titleSlug": "maximum-level-sum-of-a-binary-tree",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Breadth-First Search, Binary Tree"
+}

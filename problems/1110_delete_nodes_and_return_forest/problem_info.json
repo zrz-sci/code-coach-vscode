@@ -1,0 +1,7 @@
+{
+  "id": "1110",
+  "title": "Delete Nodes And Return Forest",
+  "titleSlug": "delete-nodes-and-return-forest",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Array, Hash Table, Binary Tree"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "LCR 016",
+  "title": "无重复字符的最长子串",
+  "titleSlug": "wtcaE1",
+  "difficulty": "Medium",
+  "tags": "Hash Table, String, Sliding Window"
+}

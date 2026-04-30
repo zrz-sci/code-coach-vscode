@@ -1,0 +1,7 @@
+{
+  "id": "947",
+  "title": "Most Stones Removed with Same Row or Column",
+  "titleSlug": "most-stones-removed-with-same-row-or-column",
+  "difficulty": "Medium",
+  "tags": "Depth-First Search, Union Find, Graph, Hash Table"
+}

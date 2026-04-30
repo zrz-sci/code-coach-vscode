@@ -1,0 +1,42 @@
+node_modules/
+out/
+dist/
+*.vsix
+.DS_Store
+*.log
+.env
+
+# Dev/internal tools (contain hardcoded local paths)
+tools/
+
+# Dev data files
+HIGH_FREQ_334.md
+high_freq_334.tsv
+high_freq_ids.txt
+high_freq_problems.json
+top300_ids.txt
+top300_interview_problems.json
+top300_interview_problems.md
+top_interview_ids.txt
+top_interview_problems.json
+install.sh
+PUBLISH_TODO.md
+python/*.json
+!python/package.json
+
+# Lock file (regenerate with npm install)
+package-lock.json
+
+# IDE
+.vscode/
+
+# User data
+.cache/
+session.json
+
+# OS
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc

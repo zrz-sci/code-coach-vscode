@@ -1,0 +1,7 @@
+{
+  "id": "433",
+  "title": "Minimum Genetic Mutation",
+  "titleSlug": "minimum-genetic-mutation",
+  "difficulty": "Medium",
+  "tags": "Breadth-First Search, Hash Table, String"
+}

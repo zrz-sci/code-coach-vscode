@@ -1,0 +1,6 @@
+"abc"
+4
+"abcde"
+5
+"abcdABCD1234"
+12

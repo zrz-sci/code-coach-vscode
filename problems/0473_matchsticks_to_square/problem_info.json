@@ -1,0 +1,7 @@
+{
+  "id": "473",
+  "title": "Matchsticks to Square",
+  "titleSlug": "matchsticks-to-square",
+  "difficulty": "Medium",
+  "tags": "Bit Manipulation, Array, Dynamic Programming, Backtracking, Bitmask"
+}

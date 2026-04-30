@@ -1,0 +1,7 @@
+{
+  "id": "865",
+  "title": "Smallest Subtree with all the Deepest Nodes",
+  "titleSlug": "smallest-subtree-with-all-the-deepest-nodes",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Breadth-First Search, Hash Table, Binary Tree"
+}

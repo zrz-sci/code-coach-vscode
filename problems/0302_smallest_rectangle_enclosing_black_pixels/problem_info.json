@@ -1,0 +1,7 @@
+{
+  "id": "302",
+  "title": "Smallest Rectangle Enclosing Black Pixels",
+  "titleSlug": "smallest-rectangle-enclosing-black-pixels",
+  "difficulty": "Hard",
+  "tags": "Depth-First Search, Breadth-First Search, Array, Binary Search, Matrix"
+}

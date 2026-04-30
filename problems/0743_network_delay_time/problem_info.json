@@ -1,0 +1,7 @@
+{
+  "id": "743",
+  "title": "Network Delay Time",
+  "titleSlug": "network-delay-time",
+  "difficulty": "Medium",
+  "tags": "Depth-First Search, Breadth-First Search, Graph, Shortest Path, Heap (Priority Queue)"
+}

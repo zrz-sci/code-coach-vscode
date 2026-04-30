@@ -1,0 +1,7 @@
+{
+  "id": "986",
+  "title": "Interval List Intersections",
+  "titleSlug": "interval-list-intersections",
+  "difficulty": "Medium",
+  "tags": "Array, Two Pointers, Sweep Line"
+}

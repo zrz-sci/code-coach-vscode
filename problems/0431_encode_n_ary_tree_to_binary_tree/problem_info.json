@@ -1,0 +1,7 @@
+{
+  "id": "431",
+  "title": "Encode N-ary Tree to Binary Tree",
+  "titleSlug": "encode-n-ary-tree-to-binary-tree",
+  "difficulty": "Hard",
+  "tags": "Tree, Depth-First Search, Breadth-First Search, Design, Binary Tree"
+}

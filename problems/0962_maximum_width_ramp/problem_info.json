@@ -1,0 +1,7 @@
+{
+  "id": "962",
+  "title": "Maximum Width Ramp",
+  "titleSlug": "maximum-width-ramp",
+  "difficulty": "Medium",
+  "tags": "Stack, Array, Two Pointers, Monotonic Stack"
+}

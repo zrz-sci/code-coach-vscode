@@ -1,0 +1,7 @@
+{
+  "id": "815",
+  "title": "Bus Routes",
+  "titleSlug": "bus-routes",
+  "difficulty": "Hard",
+  "tags": "Breadth-First Search, Array, Hash Table"
+}

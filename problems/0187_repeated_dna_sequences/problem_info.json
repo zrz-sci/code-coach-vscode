@@ -1,0 +1,7 @@
+{
+  "id": "187",
+  "title": "Repeated DNA Sequences",
+  "titleSlug": "repeated-dna-sequences",
+  "difficulty": "Medium",
+  "tags": "Bit Manipulation, Hash Table, String, Sliding Window, Hash Function, Rolling Hash"
+}

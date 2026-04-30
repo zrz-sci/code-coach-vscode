@@ -1,0 +1,7 @@
+{
+  "id": "333",
+  "title": "Largest BST Subtree",
+  "titleSlug": "largest-bst-subtree",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Binary Search Tree, Dynamic Programming, Binary Tree"
+}

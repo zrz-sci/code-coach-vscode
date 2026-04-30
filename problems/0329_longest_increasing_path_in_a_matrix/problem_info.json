@@ -1,0 +1,7 @@
+{
+  "id": "329",
+  "title": "Longest Increasing Path in a Matrix",
+  "titleSlug": "longest-increasing-path-in-a-matrix",
+  "difficulty": "Hard",
+  "tags": "Depth-First Search, Breadth-First Search, Graph, Topological Sort, Memoization, Array, Dynamic Programming, Matrix"
+}

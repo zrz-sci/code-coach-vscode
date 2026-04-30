@@ -1,0 +1,7 @@
+{
+  "id": "698",
+  "title": "Partition to K Equal Sum Subsets",
+  "titleSlug": "partition-to-k-equal-sum-subsets",
+  "difficulty": "Medium",
+  "tags": "Bit Manipulation, Memoization, Array, Dynamic Programming, Backtracking, Bitmask"
+}

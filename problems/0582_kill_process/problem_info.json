@@ -1,0 +1,7 @@
+{
+  "id": "582",
+  "title": "Kill Process",
+  "titleSlug": "kill-process",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Breadth-First Search, Array, Hash Table"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "773",
+  "title": "Sliding Puzzle",
+  "titleSlug": "sliding-puzzle",
+  "difficulty": "Hard",
+  "tags": "Breadth-First Search, Memoization, Array, Dynamic Programming, Backtracking, Matrix"
+}

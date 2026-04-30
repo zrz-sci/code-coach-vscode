@@ -1,0 +1,7 @@
+{
+  "id": "126",
+  "title": "Word Ladder II",
+  "titleSlug": "word-ladder-ii",
+  "difficulty": "Hard",
+  "tags": "Breadth-First Search, Hash Table, String, Backtracking"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "845",
+  "title": "Longest Mountain in Array",
+  "titleSlug": "longest-mountain-in-array",
+  "difficulty": "Medium",
+  "tags": "Array, Two Pointers, Dynamic Programming, Enumeration"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "871",
+  "title": "Minimum Number of Refueling Stops",
+  "titleSlug": "minimum-number-of-refueling-stops",
+  "difficulty": "Hard",
+  "tags": "Greedy, Array, Dynamic Programming, Heap (Priority Queue)"
+}

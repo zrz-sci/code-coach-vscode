@@ -1,0 +1,7 @@
+{
+  "id": "32",
+  "title": "Longest Valid Parentheses",
+  "titleSlug": "longest-valid-parentheses",
+  "difficulty": "Hard",
+  "tags": "Stack, String, Dynamic Programming"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "303",
+  "title": "Range Sum Query - Immutable",
+  "titleSlug": "range-sum-query-immutable",
+  "difficulty": "Easy",
+  "tags": "Design, Array, Prefix Sum"
+}

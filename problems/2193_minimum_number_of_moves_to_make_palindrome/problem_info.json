@@ -1,0 +1,7 @@
+{
+  "id": "2193",
+  "title": "Minimum Number of Moves to Make Palindrome",
+  "titleSlug": "minimum-number-of-moves-to-make-palindrome",
+  "difficulty": "Hard",
+  "tags": "Greedy, Binary Indexed Tree, Two Pointers, String"
+}

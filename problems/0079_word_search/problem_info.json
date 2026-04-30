@@ -1,0 +1,7 @@
+{
+  "id": "79",
+  "title": "Word Search",
+  "titleSlug": "word-search",
+  "difficulty": "Medium",
+  "tags": "Depth-First Search, Array, String, Backtracking, Matrix"
+}

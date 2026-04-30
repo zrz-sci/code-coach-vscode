@@ -1,0 +1,7 @@
+{
+  "id": "978",
+  "title": "Longest Turbulent Subarray",
+  "titleSlug": "longest-turbulent-subarray",
+  "difficulty": "Medium",
+  "tags": "Array, Dynamic Programming, Sliding Window"
+}

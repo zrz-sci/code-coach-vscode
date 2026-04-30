@@ -1,0 +1,7 @@
+{
+  "id": "30",
+  "title": "Substring with Concatenation of All Words",
+  "titleSlug": "substring-with-concatenation-of-all-words",
+  "difficulty": "Hard",
+  "tags": "Hash Table, String, Sliding Window"
+}

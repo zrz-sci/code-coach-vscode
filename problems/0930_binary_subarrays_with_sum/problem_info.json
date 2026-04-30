@@ -1,0 +1,7 @@
+{
+  "id": "930",
+  "title": "Binary Subarrays With Sum",
+  "titleSlug": "binary-subarrays-with-sum",
+  "difficulty": "Medium",
+  "tags": "Array, Hash Table, Prefix Sum, Sliding Window"
+}

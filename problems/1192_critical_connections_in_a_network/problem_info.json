@@ -1,0 +1,7 @@
+{
+  "id": "1192",
+  "title": "Critical Connections in a Network",
+  "titleSlug": "critical-connections-in-a-network",
+  "difficulty": "Hard",
+  "tags": "Depth-First Search, Graph, Biconnected Component"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "792",
+  "title": "Number of Matching Subsequences",
+  "titleSlug": "number-of-matching-subsequences",
+  "difficulty": "Medium",
+  "tags": "Trie, Array, Hash Table, String, Binary Search, Dynamic Programming, Sorting"
+}

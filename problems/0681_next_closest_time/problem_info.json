@@ -1,0 +1,7 @@
+{
+  "id": "681",
+  "title": "Next Closest Time",
+  "titleSlug": "next-closest-time",
+  "difficulty": "Medium",
+  "tags": "Hash Table, String, Backtracking, Enumeration"
+}

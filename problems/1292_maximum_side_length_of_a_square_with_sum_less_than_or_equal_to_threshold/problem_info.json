@@ -1,0 +1,7 @@
+{
+  "id": "1292",
+  "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
+  "titleSlug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
+  "difficulty": "Medium",
+  "tags": "Array, Binary Search, Matrix, Prefix Sum"
+}

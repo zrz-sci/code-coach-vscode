@@ -1,0 +1,7 @@
+{
+  "id": "3679",
+  "title": " Minimum Discards to Balance Inventory",
+  "titleSlug": "minimum-discards-to-balance-inventory",
+  "difficulty": "Medium",
+  "tags": "Array, Hash Table, Counting, Sliding Window, Simulation"
+}

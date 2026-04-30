@@ -1,0 +1,2 @@
+["RandomizedCollection","insert","insert","insert","getRandom","remove","getRandom"]
+[[],[1],[1],[2],[],[1],[]]

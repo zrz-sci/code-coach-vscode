@@ -1,0 +1,7 @@
+{
+  "id": "684",
+  "title": "Redundant Connection",
+  "titleSlug": "redundant-connection",
+  "difficulty": "Medium",
+  "tags": "Depth-First Search, Breadth-First Search, Union Find, Graph"
+}

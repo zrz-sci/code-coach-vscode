@@ -1,0 +1,7 @@
+{
+  "id": "305",
+  "title": "Number of Islands II",
+  "titleSlug": "number-of-islands-ii",
+  "difficulty": "Hard",
+  "tags": "Union Find, Array, Hash Table"
+}

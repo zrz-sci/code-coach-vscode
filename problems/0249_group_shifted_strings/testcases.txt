@@ -1,0 +1,2 @@
+["abc","bcd","acef","xyz","az","ba","a","z"]
+["a"]

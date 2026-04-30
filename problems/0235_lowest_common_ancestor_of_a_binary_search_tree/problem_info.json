@@ -1,0 +1,7 @@
+{
+  "id": "235",
+  "title": "Lowest Common Ancestor of a Binary Search Tree",
+  "titleSlug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "difficulty": "Medium",
+  "tags": "Tree, Depth-First Search, Binary Search Tree, Binary Tree"
+}

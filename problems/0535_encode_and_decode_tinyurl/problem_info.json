@@ -1,0 +1,7 @@
+{
+  "id": "535",
+  "title": "Encode and Decode TinyURL",
+  "titleSlug": "encode-and-decode-tinyurl",
+  "difficulty": "Medium",
+  "tags": "Design, Hash Table, String, Hash Function"
+}

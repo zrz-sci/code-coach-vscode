@@ -1,0 +1,7 @@
+{
+  "id": "435",
+  "title": "Non-overlapping Intervals",
+  "titleSlug": "non-overlapping-intervals",
+  "difficulty": "Medium",
+  "tags": "Greedy, Array, Dynamic Programming, Sorting"
+}

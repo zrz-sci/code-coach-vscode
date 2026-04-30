@@ -1,0 +1,7 @@
+{
+  "id": "397",
+  "title": "Integer Replacement",
+  "titleSlug": "integer-replacement",
+  "difficulty": "Medium",
+  "tags": "Greedy, Bit Manipulation, Memoization, Dynamic Programming"
+}
