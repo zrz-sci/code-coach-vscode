@@ -1,7 +1,0 @@
-{
-  "id": "131",
-  "title": "Palindrome Partitioning",
-  "titleSlug": "palindrome-partitioning",
-  "difficulty": "Medium",
-  "tags": "String, Dynamic Programming, Backtracking"
-}

@@ -1,7 +1,0 @@
-{
-  "id": "752",
-  "title": "Open the Lock",
-  "titleSlug": "open-the-lock",
-  "difficulty": "Medium",
-  "tags": "Breadth-First Search, Array, Hash Table, String"
-}

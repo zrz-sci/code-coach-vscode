@@ -1,2 +1,0 @@
-["ExamRoom","seat","seat","seat","seat","leave","seat"]
-[[10],[],[],[],[],[4],[]]

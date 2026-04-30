@@ -1,7 +1,0 @@
-{
-  "id": "322",
-  "title": "Coin Change",
-  "titleSlug": "coin-change",
-  "difficulty": "Medium",
-  "tags": "Breadth-First Search, Array, Dynamic Programming"
-}

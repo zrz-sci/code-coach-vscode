@@ -1,7 +1,0 @@
-{
-  "id": "689",
-  "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
-  "titleSlug": "maximum-sum-of-3-non-overlapping-subarrays",
-  "difficulty": "Hard",
-  "tags": "Array, Dynamic Programming, Prefix Sum, Sliding Window"
-}

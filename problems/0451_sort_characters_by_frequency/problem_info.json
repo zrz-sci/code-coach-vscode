@@ -1,7 +1,0 @@
-{
-  "id": "451",
-  "title": "Sort Characters By Frequency",
-  "titleSlug": "sort-characters-by-frequency",
-  "difficulty": "Medium",
-  "tags": "Hash Table, String, Bucket Sort, Counting, Sorting, Heap (Priority Queue)"
-}

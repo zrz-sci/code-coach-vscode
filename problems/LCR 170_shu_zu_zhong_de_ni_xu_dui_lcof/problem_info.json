@@ -1,7 +1,0 @@
-{
-  "id": "LCR 170",
-  "title": "交易逆序对的总数",
-  "titleSlug": "shu-zu-zhong-de-ni-xu-dui-lcof",
-  "difficulty": "Hard",
-  "tags": "Binary Indexed Tree, Segment Tree, Array, Binary Search, Divide and Conquer, Ordered Set, Merge Sort"
-}

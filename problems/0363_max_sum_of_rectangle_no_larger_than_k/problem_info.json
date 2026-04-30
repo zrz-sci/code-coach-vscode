@@ -1,7 +1,0 @@
-{
-  "id": "363",
-  "title": "Max Sum of Rectangle No Larger Than K",
-  "titleSlug": "max-sum-of-rectangle-no-larger-than-k",
-  "difficulty": "Hard",
-  "tags": "Array, Binary Search, Matrix, Ordered Set, Prefix Sum"
-}

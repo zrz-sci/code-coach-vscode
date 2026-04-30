@@ -1,7 +1,0 @@
-{
-  "id": "1838",
-  "title": "Frequency of the Most Frequent Element",
-  "titleSlug": "frequency-of-the-most-frequent-element",
-  "difficulty": "Medium",
-  "tags": "Greedy, Array, Binary Search, Prefix Sum, Sorting, Sliding Window"
-}

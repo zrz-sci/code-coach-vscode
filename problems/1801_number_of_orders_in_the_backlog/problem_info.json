@@ -1,7 +1,0 @@
-{
-  "id": "1801",
-  "title": "Number of Orders in the Backlog",
-  "titleSlug": "number-of-orders-in-the-backlog",
-  "difficulty": "Medium",
-  "tags": "Array, Simulation, Heap (Priority Queue)"
-}

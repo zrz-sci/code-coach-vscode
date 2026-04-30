@@ -1,7 +1,0 @@
-{
-  "id": "720",
-  "title": "Longest Word in Dictionary",
-  "titleSlug": "longest-word-in-dictionary",
-  "difficulty": "Medium",
-  "tags": "Trie, Array, Hash Table, String, Sorting"
-}

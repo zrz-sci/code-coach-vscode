@@ -1,4 +1,0 @@
-"internationalization"
-"i12iz4n"
-"apple"
-"a2e"

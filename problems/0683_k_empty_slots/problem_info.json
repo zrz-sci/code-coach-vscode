@@ -1,7 +1,0 @@
-{
-  "id": "683",
-  "title": "K Empty Slots",
-  "titleSlug": "k-empty-slots",
-  "difficulty": "Hard",
-  "tags": "Binary Indexed Tree, Segment Tree, Queue, Array, Ordered Set, Sliding Window, Monotonic Queue, Heap (Priority Queue)"
-}

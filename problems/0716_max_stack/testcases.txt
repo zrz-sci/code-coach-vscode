@@ -1,2 +1,0 @@
-["MaxStack","push","push","push","top","popMax","top","peekMax","pop","top"]
-[[],[5],[1],[5],[],[],[],[],[],[]]

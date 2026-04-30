@@ -1,7 +1,0 @@
-{
-  "id": "85",
-  "title": "Maximal Rectangle",
-  "titleSlug": "maximal-rectangle",
-  "difficulty": "Hard",
-  "tags": "Stack, Array, Dynamic Programming, Matrix, Monotonic Stack"
-}

@@ -1,7 +1,0 @@
-{
-  "id": "308",
-  "title": "Range Sum Query 2D - Mutable",
-  "titleSlug": "range-sum-query-2d-mutable",
-  "difficulty": "Medium",
-  "tags": "Design, Binary Indexed Tree, Segment Tree, Array, Matrix"
-}

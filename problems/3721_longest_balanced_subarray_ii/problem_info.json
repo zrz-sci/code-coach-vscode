@@ -1,7 +1,0 @@
-{
-  "id": "3721",
-  "title": "Longest Balanced Subarray II",
-  "titleSlug": "longest-balanced-subarray-ii",
-  "difficulty": "Hard",
-  "tags": "Segment Tree, Array, Hash Table, Divide and Conquer, Prefix Sum"
-}

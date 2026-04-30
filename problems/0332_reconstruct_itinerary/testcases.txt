@@ -1,2 +1,0 @@
-[["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]
-[["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]

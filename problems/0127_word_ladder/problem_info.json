@@ -1,7 +1,0 @@
-{
-  "id": "127",
-  "title": "Word Ladder",
-  "titleSlug": "word-ladder",
-  "difficulty": "Hard",
-  "tags": "Breadth-First Search, Hash Table, String"
-}

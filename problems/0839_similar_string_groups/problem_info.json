@@ -1,7 +1,0 @@
-{
-  "id": "839",
-  "title": "Similar String Groups",
-  "titleSlug": "similar-string-groups",
-  "difficulty": "Hard",
-  "tags": "Depth-First Search, Breadth-First Search, Union Find, Array, Hash Table, String"
-}

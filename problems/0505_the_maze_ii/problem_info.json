@@ -1,7 +1,0 @@
-{
-  "id": "505",
-  "title": "The Maze II",
-  "titleSlug": "the-maze-ii",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Graph, Array, Matrix, Shortest Path, Heap (Priority Queue)"
-}

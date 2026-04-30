@@ -1,4 +1,0 @@
-"BCD"
-["BCC","CDE","CEA","FFF"]
-"AAAA"
-["AAB","AAC","BCD","BBE","DEF"]

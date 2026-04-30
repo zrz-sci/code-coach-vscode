@@ -1,7 +1,0 @@
-{
-  "id": "547",
-  "title": "Number of Provinces",
-  "titleSlug": "number-of-provinces",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Union Find, Graph"
-}

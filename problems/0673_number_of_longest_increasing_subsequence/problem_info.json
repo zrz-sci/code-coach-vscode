@@ -1,7 +1,0 @@
-{
-  "id": "673",
-  "title": "Number of Longest Increasing Subsequence",
-  "titleSlug": "number-of-longest-increasing-subsequence",
-  "difficulty": "Medium",
-  "tags": "Binary Indexed Tree, Segment Tree, Array, Dynamic Programming"
-}

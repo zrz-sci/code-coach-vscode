@@ -1,7 +1,0 @@
-{
-  "id": "992",
-  "title": "Subarrays with K Different Integers",
-  "titleSlug": "subarrays-with-k-different-integers",
-  "difficulty": "Hard",
-  "tags": "Array, Hash Table, Counting, Sliding Window"
-}

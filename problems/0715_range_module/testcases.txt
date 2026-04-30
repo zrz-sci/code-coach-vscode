@@ -1,2 +1,0 @@
-["RangeModule","addRange","removeRange","queryRange","queryRange","queryRange"]
-[[],[10,20],[14,16],[10,14],[13,15],[16,17]]

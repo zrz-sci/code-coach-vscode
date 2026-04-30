@@ -1,2 +1,0 @@
-["Solution","flip","flip","flip","reset","flip"]
-[[3,1],[],[],[],[],[]]

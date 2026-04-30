@@ -1,7 +1,0 @@
-{
-  "id": "695",
-  "title": "Max Area of Island",
-  "titleSlug": "max-area-of-island",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Union Find, Array, Matrix"
-}

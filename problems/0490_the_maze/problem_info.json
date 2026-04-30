@@ -1,7 +1,0 @@
-{
-  "id": "490",
-  "title": "The Maze",
-  "titleSlug": "the-maze",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Array, Matrix"
-}

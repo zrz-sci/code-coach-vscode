@@ -1,7 +1,0 @@
-{
-  "id": "1963",
-  "title": "Minimum Number of Swaps to Make the String Balanced",
-  "titleSlug": "minimum-number-of-swaps-to-make-the-string-balanced",
-  "difficulty": "Medium",
-  "tags": "Stack, Greedy, Two Pointers, String"
-}

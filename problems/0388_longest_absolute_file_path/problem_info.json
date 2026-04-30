@@ -1,7 +1,0 @@
-{
-  "id": "388",
-  "title": "Longest Absolute File Path",
-  "titleSlug": "longest-absolute-file-path",
-  "difficulty": "Medium",
-  "tags": "Stack, Depth-First Search, String"
-}

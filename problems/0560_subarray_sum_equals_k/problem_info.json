@@ -1,7 +1,0 @@
-{
-  "id": "560",
-  "title": "Subarray Sum Equals K",
-  "titleSlug": "subarray-sum-equals-k",
-  "difficulty": "Medium",
-  "tags": "Array, Hash Table, Prefix Sum"
-}

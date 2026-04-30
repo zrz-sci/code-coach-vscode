@@ -1,7 +1,0 @@
-{
-  "id": "398",
-  "title": "Random Pick Index",
-  "titleSlug": "random-pick-index",
-  "difficulty": "Medium",
-  "tags": "Reservoir Sampling, Hash Table, Math, Randomized"
-}

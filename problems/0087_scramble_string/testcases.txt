@@ -1,6 +1,0 @@
-"great"
-"rgeat"
-"abcde"
-"caebd"
-"a"
-"a"

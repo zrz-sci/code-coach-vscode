@@ -1,7 +1,0 @@
-{
-  "id": "487",
-  "title": "Max Consecutive Ones II",
-  "titleSlug": "max-consecutive-ones-ii",
-  "difficulty": "Medium",
-  "tags": "Array, Dynamic Programming, Sliding Window"
-}

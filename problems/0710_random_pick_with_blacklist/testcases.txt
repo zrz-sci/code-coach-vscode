@@ -1,2 +1,0 @@
-["Solution","pick","pick","pick","pick","pick","pick","pick"]
-[[7,[2,3,5]],[],[],[],[],[],[],[]]

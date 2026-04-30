@@ -1,3 +1,0 @@
-["babca","bbazb"]
-["edcba"]
-["ghi","def","abc"]

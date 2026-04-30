@@ -1,7 +1,0 @@
-{
-  "id": "736",
-  "title": "Parse Lisp Expression",
-  "titleSlug": "parse-lisp-expression",
-  "difficulty": "Hard",
-  "tags": "Stack, Recursion, Hash Table, String"
-}

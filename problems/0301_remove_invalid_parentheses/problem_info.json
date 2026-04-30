@@ -1,7 +1,0 @@
-{
-  "id": "301",
-  "title": "Remove Invalid Parentheses",
-  "titleSlug": "remove-invalid-parentheses",
-  "difficulty": "Hard",
-  "tags": "Breadth-First Search, String, Backtracking"
-}

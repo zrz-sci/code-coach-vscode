@@ -1,7 +1,0 @@
-{
-  "id": "1263",
-  "title": "Minimum Moves to Move a Box to Their Target Location",
-  "titleSlug": "minimum-moves-to-move-a-box-to-their-target-location",
-  "difficulty": "Hard",
-  "tags": "Breadth-First Search, Array, Matrix, Heap (Priority Queue)"
-}

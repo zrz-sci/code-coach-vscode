@@ -1,4 +1,0 @@
-"sea"
-"eat"
-"leetcode"
-"etco"

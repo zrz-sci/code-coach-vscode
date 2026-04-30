@@ -1,7 +1,0 @@
-{
-  "id": "218",
-  "title": "The Skyline Problem",
-  "titleSlug": "the-skyline-problem",
-  "difficulty": "Hard",
-  "tags": "Binary Indexed Tree, Segment Tree, Array, Divide and Conquer, Ordered Set, Sorting, Sweep Line, Heap (Priority Queue)"
-}

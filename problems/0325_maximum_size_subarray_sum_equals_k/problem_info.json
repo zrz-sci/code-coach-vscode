@@ -1,7 +1,0 @@
-{
-  "id": "325",
-  "title": "Maximum Size Subarray Sum Equals k",
-  "titleSlug": "maximum-size-subarray-sum-equals-k",
-  "difficulty": "Medium",
-  "tags": "Array, Hash Table, Prefix Sum"
-}

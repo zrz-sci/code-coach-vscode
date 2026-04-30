@@ -1,6 +1,0 @@
-["amazon","apple","facebook","google","leetcode"]
-["e","o"]
-["amazon","apple","facebook","google","leetcode"]
-["lc","eo"]
-["acaac","cccbb","aacbb","caacc","bcbbb"]
-["c","cc","b"]

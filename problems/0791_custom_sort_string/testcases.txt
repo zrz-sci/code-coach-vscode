@@ -1,4 +1,0 @@
-"cba"
-"abcd"
-"bcafg"
-"abcd"

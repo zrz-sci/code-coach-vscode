@@ -1,7 +1,0 @@
-{
-  "id": "214",
-  "title": "Shortest Palindrome",
-  "titleSlug": "shortest-palindrome",
-  "difficulty": "Hard",
-  "tags": "String, String Matching, Hash Function, Rolling Hash"
-}

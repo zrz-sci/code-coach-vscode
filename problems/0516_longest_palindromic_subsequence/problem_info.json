@@ -1,7 +1,0 @@
-{
-  "id": "516",
-  "title": "Longest Palindromic Subsequence",
-  "titleSlug": "longest-palindromic-subsequence",
-  "difficulty": "Medium",
-  "tags": "String, Dynamic Programming"
-}

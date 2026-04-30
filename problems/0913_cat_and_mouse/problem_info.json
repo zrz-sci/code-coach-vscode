@@ -1,7 +1,0 @@
-{
-  "id": "913",
-  "title": "Cat and Mouse",
-  "titleSlug": "cat-and-mouse",
-  "difficulty": "Hard",
-  "tags": "Graph, Topological Sort, Memoization, Math, Dynamic Programming, Game Theory"
-}

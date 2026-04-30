@@ -1,7 +1,0 @@
-{
-  "id": "1905",
-  "title": "Count Sub Islands",
-  "titleSlug": "count-sub-islands",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Union Find, Array, Matrix"
-}

@@ -1,7 +1,0 @@
-{
-  "id": "1722",
-  "title": "Minimize Hamming Distance After Swap Operations",
-  "titleSlug": "minimize-hamming-distance-after-swap-operations",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Union Find, Array"
-}

@@ -1,3 +1,0 @@
-"<DIV>This is the first line <![CDATA[<div>]]></DIV>"
-"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>"
-"<A>  <B> </A>   </B>"

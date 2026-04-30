@@ -1,2 +1,0 @@
-["PeekingIterator","next","peek","next","next","hasNext"]
-[[[1,2,3]],[],[],[],[],[]]

@@ -1,1 +1,0 @@
-{"headers":{"Follow":["followee","follower"]},"rows":{"Follow":[["Alice", "Bob"], ["Bob", "Cena"], ["Bob", "Donald"], ["Donald", "Edward"]]}}

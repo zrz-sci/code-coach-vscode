@@ -1,7 +1,0 @@
-{
-  "id": "952",
-  "title": "Largest Component Size by Common Factor",
-  "titleSlug": "largest-component-size-by-common-factor",
-  "difficulty": "Hard",
-  "tags": "Union Find, Array, Hash Table, Math, Number Theory"
-}

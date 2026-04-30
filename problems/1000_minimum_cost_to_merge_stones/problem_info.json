@@ -1,7 +1,0 @@
-{
-  "id": "1000",
-  "title": "Minimum Cost to Merge Stones",
-  "titleSlug": "minimum-cost-to-merge-stones",
-  "difficulty": "Hard",
-  "tags": "Array, Dynamic Programming, Prefix Sum"
-}

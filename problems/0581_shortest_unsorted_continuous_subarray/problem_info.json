@@ -1,7 +1,0 @@
-{
-  "id": "581",
-  "title": "Shortest Unsorted Continuous Subarray",
-  "titleSlug": "shortest-unsorted-continuous-subarray",
-  "difficulty": "Medium",
-  "tags": "Stack, Greedy, Array, Two Pointers, Sorting, Monotonic Stack"
-}

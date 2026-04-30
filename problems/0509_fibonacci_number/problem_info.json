@@ -1,7 +1,0 @@
-{
-  "id": "509",
-  "title": "Fibonacci Number",
-  "titleSlug": "fibonacci-number",
-  "difficulty": "Easy",
-  "tags": "Recursion, Memoization, Math, Dynamic Programming"
-}

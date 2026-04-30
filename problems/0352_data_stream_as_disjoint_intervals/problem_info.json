@@ -1,7 +1,0 @@
-{
-  "id": "352",
-  "title": "Data Stream as Disjoint Intervals",
-  "titleSlug": "data-stream-as-disjoint-intervals",
-  "difficulty": "Hard",
-  "tags": "Union Find, Design, Hash Table, Binary Search, Data Stream, Ordered Set"
-}

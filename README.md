@@ -8,7 +8,7 @@ Works with both LeetCode US (leetcode.com) and LeetCode CN (leetcode.cn).
 
 ## Highlights
 
-- **1100+ problems** with pre-built study hints and reference solutions — ready to use, no API key needed
+- **AI-powered study aids** — generate hints and reference solutions with your own Claude API key
 - **Progress tracking** with spaced repetition (Ebbinghaus forgetting curve) review schedule
 - **Smart recommendations** — follows your favorite folder order, skips completed problems
 - **Bilingual** — problem descriptions in both English and Chinese
@@ -21,12 +21,10 @@ Works with both LeetCode US (leetcode.com) and LeetCode CN (leetcode.cn).
 - Favorites and custom lists synced from your LeetCode account
 - One-click fetch with auto-generated C++ solution template
 
-### Pre-built Study Materials
-This repo includes **1100+ problems** with high-quality study materials:
+### AI-Powered Study Aids
 - **hints.md** — progressive hints, approach analysis, complexity breakdown, interview follow-ups
 - **reference.cpp** — multiple annotated reference solutions with tradeoff comparison
-
-You can also generate hints for new problems using your own Claude API key.
+- Powered by Claude API (bring your own key)
 
 ### Code & Submit
 | Shortcut | Action |
@@ -99,7 +97,7 @@ code --install-extension code-coach-1.1.0.vsix
 
 After installation, restart VS Code. You'll see the **Code Coach** icon in the Activity Bar.
 
-> **Tip:** The `problems/` folder in this repo contains 1100+ pre-built hints and references. Set `leetcode.problemsDir` in VS Code settings to point to it, or copy it to `~/lc-practice/`.
+> **Tip:** Set `leetcode.problemsDir` in VS Code settings to your preferred directory for storing problems.
 
 ## Getting Started
 
@@ -128,12 +126,14 @@ You can also access settings from the sidebar: **Session > Settings**.
 
 ## AI Hints Generation
 
-The repo ships with **1100+ pre-built** hints and reference solutions. To generate hints for additional problems:
+To generate AI-powered study hints and reference solutions:
 
 1. Set your API key: **Session > Settings > Set AI API Key**
 2. Enter your Anthropic API key (`sk-ant-...`)
 3. Use **Settings > Re-fetch All Favorites** to batch-generate hints
 4. Each problem gets `hints.md` + `reference.cpp` automatically
+
+Without an API key, problems are fetched without AI-generated content.
 
 Get your API key at [console.anthropic.com](https://console.anthropic.com).
 

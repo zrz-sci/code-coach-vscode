@@ -1,7 +1,0 @@
-{
-  "id": "316",
-  "title": "Remove Duplicate Letters",
-  "titleSlug": "remove-duplicate-letters",
-  "difficulty": "Medium",
-  "tags": "Stack, Greedy, String, Monotonic Stack"
-}

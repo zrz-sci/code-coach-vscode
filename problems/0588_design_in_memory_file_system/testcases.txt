@@ -1,2 +1,0 @@
-["FileSystem","ls","mkdir","addContentToFile","ls","readContentFromFile"]
-[[],["/"],["/a/b/c"],["/a/b/c/d","hello"],["/"],["/a/b/c/d"]]

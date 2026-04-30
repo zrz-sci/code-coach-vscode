@@ -1,7 +1,0 @@
-{
-  "id": "159",
-  "title": "Longest Substring with At Most Two Distinct Characters",
-  "titleSlug": "longest-substring-with-at-most-two-distinct-characters",
-  "difficulty": "Medium",
-  "tags": "Hash Table, String, Sliding Window"
-}

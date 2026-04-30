@@ -1,7 +1,0 @@
-{
-  "id": "797",
-  "title": "All Paths From Source to Target",
-  "titleSlug": "all-paths-from-source-to-target",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Graph, Backtracking"
-}

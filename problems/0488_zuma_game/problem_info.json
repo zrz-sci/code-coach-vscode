@@ -1,7 +1,0 @@
-{
-  "id": "488",
-  "title": "Zuma Game",
-  "titleSlug": "zuma-game",
-  "difficulty": "Hard",
-  "tags": "Stack, Breadth-First Search, Memoization, String, Dynamic Programming"
-}

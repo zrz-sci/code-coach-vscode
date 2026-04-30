@@ -1,7 +1,0 @@
-{
-  "id": "面试题 17.24",
-  "title": "Max Submatrix LCCI",
-  "titleSlug": "max-submatrix-lcci",
-  "difficulty": "Hard",
-  "tags": "Array, Dynamic Programming, Matrix, Prefix Sum"
-}

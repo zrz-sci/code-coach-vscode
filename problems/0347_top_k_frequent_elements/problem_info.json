@@ -1,7 +1,0 @@
-{
-  "id": "347",
-  "title": "Top K Frequent Elements",
-  "titleSlug": "top-k-frequent-elements",
-  "difficulty": "Medium",
-  "tags": "Array, Hash Table, Divide and Conquer, Bucket Sort, Counting, Quickselect, Sorting, Heap (Priority Queue)"
-}

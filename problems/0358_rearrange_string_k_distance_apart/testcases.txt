@@ -1,6 +1,0 @@
-"aabbcc"
-3
-"aaabc"
-3
-"aaadbbcc"
-2

@@ -1,7 +1,0 @@
-{
-  "id": "1233",
-  "title": "Remove Sub-Folders from the Filesystem",
-  "titleSlug": "remove-sub-folders-from-the-filesystem",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Trie, Array, String"
-}

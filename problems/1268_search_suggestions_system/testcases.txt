@@ -1,4 +1,0 @@
-["mobile","mouse","moneypot","monitor","mousepad"]
-"mouse"
-["havana"]
-"havana"

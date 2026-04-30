@@ -1,7 +1,0 @@
-{
-  "id": "918",
-  "title": "Maximum Sum Circular Subarray",
-  "titleSlug": "maximum-sum-circular-subarray",
-  "difficulty": "Medium",
-  "tags": "Queue, Array, Divide and Conquer, Dynamic Programming, Monotonic Queue"
-}

@@ -1,7 +1,0 @@
-{
-  "id": "903",
-  "title": "Valid Permutations for DI Sequence",
-  "titleSlug": "valid-permutations-for-di-sequence",
-  "difficulty": "Hard",
-  "tags": "String, Dynamic Programming, Prefix Sum"
-}

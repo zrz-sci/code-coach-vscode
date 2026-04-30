@@ -1,9 +1,0 @@
-["hello","world"]
-2
-8
-["a", "bcd", "e"]
-3
-6
-["i","had","apple","pie"]
-4
-5

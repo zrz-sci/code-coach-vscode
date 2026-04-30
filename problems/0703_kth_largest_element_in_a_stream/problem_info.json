@@ -1,7 +1,0 @@
-{
-  "id": "703",
-  "title": "Kth Largest Element in a Stream",
-  "titleSlug": "kth-largest-element-in-a-stream",
-  "difficulty": "Easy",
-  "tags": "Tree, Design, Binary Search Tree, Binary Tree, Data Stream, Heap (Priority Queue)"
-}

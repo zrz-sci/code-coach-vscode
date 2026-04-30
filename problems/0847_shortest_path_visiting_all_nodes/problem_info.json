@@ -1,7 +1,0 @@
-{
-  "id": "847",
-  "title": "Shortest Path Visiting All Nodes",
-  "titleSlug": "shortest-path-visiting-all-nodes",
-  "difficulty": "Hard",
-  "tags": "Bit Manipulation, Breadth-First Search, Graph, Dynamic Programming, Bitmask"
-}

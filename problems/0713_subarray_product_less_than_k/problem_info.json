@@ -1,7 +1,0 @@
-{
-  "id": "713",
-  "title": "Subarray Product Less Than K",
-  "titleSlug": "subarray-product-less-than-k",
-  "difficulty": "Medium",
-  "tags": "Array, Binary Search, Prefix Sum, Sliding Window"
-}

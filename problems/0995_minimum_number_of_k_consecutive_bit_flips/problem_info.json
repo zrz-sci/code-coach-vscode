@@ -1,7 +1,0 @@
-{
-  "id": "995",
-  "title": "Minimum Number of K Consecutive Bit Flips",
-  "titleSlug": "minimum-number-of-k-consecutive-bit-flips",
-  "difficulty": "Hard",
-  "tags": "Bit Manipulation, Queue, Array, Prefix Sum, Sliding Window"
-}

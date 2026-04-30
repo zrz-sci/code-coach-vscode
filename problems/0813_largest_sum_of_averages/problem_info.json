@@ -1,7 +1,0 @@
-{
-  "id": "813",
-  "title": "Largest Sum of Averages",
-  "titleSlug": "largest-sum-of-averages",
-  "difficulty": "Medium",
-  "tags": "Array, Dynamic Programming, Prefix Sum"
-}

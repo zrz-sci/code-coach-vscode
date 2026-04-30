@@ -1,7 +1,0 @@
-{
-  "id": "327",
-  "title": "Count of Range Sum",
-  "titleSlug": "count-of-range-sum",
-  "difficulty": "Hard",
-  "tags": "Binary Indexed Tree, Segment Tree, Array, Binary Search, Divide and Conquer, Ordered Set, Merge Sort"
-}

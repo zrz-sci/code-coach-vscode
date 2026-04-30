@@ -1,7 +1,0 @@
-{
-  "id": "718",
-  "title": "Maximum Length of Repeated Subarray",
-  "titleSlug": "maximum-length-of-repeated-subarray",
-  "difficulty": "Medium",
-  "tags": "Array, Binary Search, Dynamic Programming, Sliding Window, Hash Function, Rolling Hash"
-}

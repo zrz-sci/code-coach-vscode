@@ -1,7 +1,0 @@
-{
-  "id": "529",
-  "title": "Minesweeper",
-  "titleSlug": "minesweeper",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Array, Matrix"
-}

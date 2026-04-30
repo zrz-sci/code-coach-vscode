@@ -1,7 +1,0 @@
-{
-  "id": "785",
-  "title": "Is Graph Bipartite?",
-  "titleSlug": "is-graph-bipartite",
-  "difficulty": "Medium",
-  "tags": "Depth-First Search, Breadth-First Search, Union Find, Graph"
-}

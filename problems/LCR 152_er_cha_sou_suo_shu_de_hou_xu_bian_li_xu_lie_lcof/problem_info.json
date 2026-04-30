@@ -1,7 +1,0 @@
-{
-  "id": "LCR 152",
-  "title": "验证二叉搜索树的后序遍历序列",
-  "titleSlug": "er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof",
-  "difficulty": "Medium",
-  "tags": "Stack, Tree, Binary Search Tree, Recursion, Array, Binary Tree, Monotonic Stack"
-}

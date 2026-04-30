@@ -1,7 +1,0 @@
-{
-  "id": "1970",
-  "title": "Last Day Where You Can Still Cross",
-  "titleSlug": "last-day-where-you-can-still-cross",
-  "difficulty": "Hard",
-  "tags": "Depth-First Search, Breadth-First Search, Union Find, Array, Binary Search, Matrix"
-}

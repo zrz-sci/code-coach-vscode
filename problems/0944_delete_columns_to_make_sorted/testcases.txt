@@ -1,3 +1,0 @@
-["cba","daf","ghi"]
-["a","b"]
-["zyx","wvu","tsr"]

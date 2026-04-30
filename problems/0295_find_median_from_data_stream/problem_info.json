@@ -1,7 +1,0 @@
-{
-  "id": "295",
-  "title": "Find Median from Data Stream",
-  "titleSlug": "find-median-from-data-stream",
-  "difficulty": "Hard",
-  "tags": "Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue)"
-}

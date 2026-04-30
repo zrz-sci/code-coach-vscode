@@ -1,7 +1,0 @@
-{
-  "id": "406",
-  "title": "Queue Reconstruction by Height",
-  "titleSlug": "queue-reconstruction-by-height",
-  "difficulty": "Medium",
-  "tags": "Binary Indexed Tree, Segment Tree, Array, Sorting"
-}

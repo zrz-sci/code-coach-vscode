@@ -1,4 +1,0 @@
-["ab","bc"]
-"aabcd"
-["ab","cb"]
-"aabcd"

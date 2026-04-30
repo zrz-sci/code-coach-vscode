@@ -1,7 +1,0 @@
-{
-  "id": "508",
-  "title": "Most Frequent Subtree Sum",
-  "titleSlug": "most-frequent-subtree-sum",
-  "difficulty": "Medium",
-  "tags": "Tree, Depth-First Search, Hash Table, Binary Tree"
-}

@@ -1,7 +1,0 @@
-{
-  "id": "1477",
-  "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
-  "titleSlug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
-  "difficulty": "Medium",
-  "tags": "Array, Hash Table, Binary Search, Dynamic Programming, Sliding Window"
-}

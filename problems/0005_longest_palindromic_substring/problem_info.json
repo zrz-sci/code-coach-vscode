@@ -1,7 +1,0 @@
-{
-  "id": "5",
-  "title": "Longest Palindromic Substring",
-  "titleSlug": "longest-palindromic-substring",
-  "difficulty": "Medium",
-  "tags": "Two Pointers, String, Dynamic Programming"
-}

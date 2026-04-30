@@ -1,7 +1,0 @@
-{
-  "id": "769",
-  "title": "Max Chunks To Make Sorted",
-  "titleSlug": "max-chunks-to-make-sorted",
-  "difficulty": "Medium",
-  "tags": "Stack, Greedy, Array, Sorting, Monotonic Stack"
-}

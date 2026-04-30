@@ -1,2 +1,0 @@
-["TextEditor","addText","deleteText","addText","cursorRight","cursorLeft","deleteText","cursorLeft","cursorRight"]
-[[],["leetcode"],[4],["practice"],[3],[8],[10],[2],[6]]

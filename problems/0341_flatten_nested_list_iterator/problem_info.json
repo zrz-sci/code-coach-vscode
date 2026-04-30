@@ -1,7 +1,0 @@
-{
-  "id": "341",
-  "title": "Flatten Nested List Iterator",
-  "titleSlug": "flatten-nested-list-iterator",
-  "difficulty": "Medium",
-  "tags": "Stack, Tree, Depth-First Search, Design, Queue, Iterator"
-}

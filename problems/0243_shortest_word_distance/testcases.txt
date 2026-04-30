@@ -1,6 +1,0 @@
-["practice", "makes", "perfect", "coding", "makes"]
-"coding"
-"practice"
-["practice", "makes", "perfect", "coding", "makes"]
-"makes"
-"coding"

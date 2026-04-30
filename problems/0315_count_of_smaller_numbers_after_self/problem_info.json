@@ -1,7 +1,0 @@
-{
-  "id": "315",
-  "title": "Count of Smaller Numbers After Self",
-  "titleSlug": "count-of-smaller-numbers-after-self",
-  "difficulty": "Hard",
-  "tags": "Binary Indexed Tree, Segment Tree, Array, Binary Search, Divide and Conquer, Ordered Set, Merge Sort"
-}
