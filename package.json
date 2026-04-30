@@ -21,7 +21,7 @@
     "Education",
     "Other"
   ],
-  "icon": "resources/leetcode.png",
+  "icon": "resources/icon.png",
   "keywords": [
     "algorithm",
     "interview",
@@ -38,8 +38,8 @@
       "activitybar": [
         {
           "id": "leetcode-explorer",
-          "title": "LeetCode",
-          "icon": "resources/leetcode.svg"
+          "title": "Code Coach",
+          "icon": "resources/sidebar-icon.svg"
         }
       ]
     },
