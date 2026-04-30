@@ -70,6 +70,37 @@ pip install requests html2text
 pip install playwright && python3 -m playwright install chromium
 ```
 
+## Installation from Source
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/zrz-sci/code-coach-vscode.git
+cd code-coach-vscode
+
+# 2. Install Node.js dependencies
+npm install
+
+# 3. Compile TypeScript
+npm run compile
+
+# 4. Install Python dependencies
+pip install requests html2text
+
+# 5. (Optional) Browser login support
+pip install playwright && python3 -m playwright install chromium
+
+# 6. Package as .vsix
+npm install -g @vscode/vsce
+vsce package
+
+# 7. Install in VS Code
+code --install-extension code-coach-1.1.0.vsix
+```
+
+After installation, restart VS Code. You'll see the **Code Coach** icon in the Activity Bar.
+
+> **Tip:** The `problems/` folder in this repo contains 1100+ pre-built hints and references. Set `leetcode.problemsDir` in VS Code settings to point to it, or copy it to `~/lc-practice/`.
+
 ## Getting Started
 
 1. Install the extension from VS Code Marketplace
