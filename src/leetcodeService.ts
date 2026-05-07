@@ -54,7 +54,7 @@ export class LeetCodeService {
     }
 
     getProblemsDir(): string {
-        // Priority: 1. VS Code setting  2. Relative to extension  3. ~/lc-practice
+        // Priority: 1. VS Code setting  2. Relative to extension  3. ~/code-coach
         const configured = vscode.workspace.getConfiguration('leetcode').get<string>('problemsDir');
         if (configured) return configured;
         // Relative to extension: extensionPath/../problems/
@@ -62,7 +62,7 @@ export class LeetCodeService {
         const fs = require('fs');
         if (fs.existsSync(relative)) return relative;
         // Fallback for standalone installs
-        return path.join(os.homedir(), 'lc-practice');
+        return path.join(os.homedir(), 'code-coach');
     }
 
     private async runCommand(args: string[]): Promise<{ stdout: string; stderr: string; code: number }> {
@@ -294,6 +294,12 @@ export class LeetCodeService {
             // Remove ANSI color codes
             const cleanPath = filePath.replace(/\x1b\[[0-9;]*m/g, '');
             const fullPath = path.isAbsolute(cleanPath) ? cleanPath : path.join(this.getProblemsDir(), cleanPath);
+            // Validate path is within problems directory (prevent path traversal)
+            const resolvedPath = path.resolve(fullPath);
+            const resolvedBase = path.resolve(this.getProblemsDir());
+            if (!resolvedPath.startsWith(resolvedBase + path.sep) && resolvedPath !== resolvedBase) {
+                return { success: false, error: 'Invalid file path returned' };
+            }
             return {
                 success: true,
                 filePath: fullPath,
@@ -832,7 +838,7 @@ export class LeetCodeService {
     }
 
     // Reset a solution to initial template for re-practice (重做)
-    // Keeps: problem_info.json, hints.md, reference.cpp, testcases.txt
+    // Keeps: problem_info.json, reference.cpp, testcases.txt
     // Resets: solution.cpp back to empty template
     // Deletes: compiled binary
     async resetSolution(solutionPath: string): Promise<{ success: boolean; filePath?: string; error?: string }> {

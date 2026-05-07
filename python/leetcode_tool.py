@@ -758,8 +758,8 @@ class LeetCodeTool:
                 print(f"\nRuntime Error:\n{status.get('full_runtime_error', '')}")
 
 
-    def generate_hints(self, problem_dir_or_file: str, api_key: str):
-        """Generate hints.md and reference.cpp for a single problem using AI."""
+    def generate_reference(self, problem_dir_or_file: str, api_key: str):
+        """Generate reference.cpp for a single problem using AI."""
         problem_dir = Path(problem_dir_or_file)
         if problem_dir.is_file():
             problem_dir = problem_dir.parent
@@ -776,19 +776,18 @@ class LeetCodeTool:
         title = info.get('title', 'Unknown')
 
         # Check if already exists
-        hints_exists = (problem_dir / 'hints.md').exists()
         ref_exists = (problem_dir / 'reference.cpp').exists()
-        if hints_exists and ref_exists:
-            print(colorize(f"✓ {pid}. {title} — hints & reference already exist", 'green'))
+        if ref_exists:
+            print(colorize(f"✓ {pid}. {title} — reference already exists", 'green'))
             return True
 
-        print(f"Generating AI hints for {pid}. {title}...", flush=True)
+        print(f"Generating AI reference for {pid}. {title}...", flush=True)
 
         try:
-            from fetch_and_generate import generate_hints_with_ai
-            success = generate_hints_with_ai(problem_dir, info, api_key)
+            from fetch_and_generate import generate_reference
+            success = generate_reference(problem_dir, info, api_key)
             if success:
-                print(colorize(f"✓ Generated hints.md + reference.cpp", 'green'))
+                print(colorize(f"✓ Generated reference.cpp", 'green'))
                 return True
             else:
                 print(colorize("✗ Generation failed", 'red'))
@@ -803,7 +802,7 @@ class LeetCodeTool:
     def reset_solution(self, problem_dir_or_file: str):
         """Reset a solution to its initial template state for re-practice (重做).
 
-        Keeps: problem_info.json, hints.md, reference.cpp, testcases.txt
+        Keeps: problem_info.json, reference.cpp, testcases.txt
         Resets: solution.cpp (back to empty template)
         Deletes: compiled binary
         """
@@ -873,24 +872,17 @@ class LeetCodeTool:
         parent_dir = str(problem_dir.parent)
         new_file = generate_with_structures(problem_data, parent_dir)
 
-        # Add hints/reference links if those files exist
+        # Add reference link if file exists
         if new_file:
             sol_path = Path(new_file)
-            hints_path = problem_dir / 'hints.md'
-            ref_path = problem_dir / 'reference.cpp'
-            if hints_path.exists() or ref_path.exists():
+            ref_new = problem_dir / 'reference_new.cpp'
+            ref_old = problem_dir / 'reference.cpp'
+            ref_path = ref_new if ref_new.exists() else ref_old
+            if ref_path.exists():
                 content = sol_path.read_text()
-                # Insert links after the opening comment block
-                links = []
-                if hints_path.exists():
-                    links.append(f' * 📚 解题提示: file://{hints_path}')
-                if ref_path.exists():
-                    links.append(f' * 💡 参考解法: file://{ref_path}')
-                if links:
-                    link_block = '\n'.join(links) + '\n *\n'
-                    # Insert after first line of comment
-                    content = content.replace('/*\n', '/*\n' + link_block, 1)
-                    sol_path.write_text(content)
+                link_block = f' * 💡 参考解法: file://{ref_path}\n *\n'
+                content = content.replace('/*\n', '/*\n' + link_block, 1)
+                sol_path.write_text(content)
 
         problem_id = info.get('id', '?')
         title = info.get('title', 'Unknown')
@@ -990,10 +982,10 @@ def main():
     config_parser.add_argument('--lang', choices=['cn', 'en'],
                                help='Set display language for problem titles/descriptions (cn/en)')
 
-    # Generate hints command
-    hints_parser = subparsers.add_parser('generate-hints', help='Generate AI hints & reference for a problem')
-    hints_parser.add_argument('path', help='Path to solution.cpp or problem directory')
-    hints_parser.add_argument('--api-key', help='Anthropic API key (or set ANTHROPIC_API_KEY env var)')
+    # Generate reference command
+    ref_parser = subparsers.add_parser('generate-reference', help='Generate AI reference for a problem')
+    ref_parser.add_argument('path', help='Path to solution.cpp or problem directory')
+    ref_parser.add_argument('--api-key', help='Anthropic API key (or set ANTHROPIC_API_KEY env var)')
 
     # Reset command
     reset_parser = subparsers.add_parser('reset', help='Reset solution to initial template (re-do / 重做)')
@@ -1058,12 +1050,12 @@ def main():
         tool.fetch(args.problem, open_in_editor=True)
     elif args.command == 'reset':
         tool.reset_solution(args.path)
-    elif args.command == 'generate-hints':
+    elif args.command == 'generate-reference':
         api_key = getattr(args, 'api_key', None) or os.environ.get('ANTHROPIC_API_KEY', '')
         if not api_key:
             print(colorize("✗ Anthropic API key required. Set ANTHROPIC_API_KEY env var or use --api-key", 'red'))
         else:
-            tool.generate_hints(args.path, api_key)
+            tool.generate_reference(args.path, api_key)
     elif args.command == 'config':
         config = load_config()
         changed = False

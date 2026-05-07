@@ -33,9 +33,11 @@ export class SolutionProvider implements vscode.TreeDataProvider<SolutionItem> {
             // Show child files for an expanded solution
             const dir = path.dirname(element.filePath);
             const children: SolutionItem[] = [];
+            // Prefer reference_new.cpp, fallback to reference.cpp
+            const refFile = fs.existsSync(path.join(dir, 'reference_new.cpp')) ? 'reference_new.cpp' : 'reference.cpp';
             const childFiles = this.mockMode
                 ? ['testcases.txt']
-                : ['hints.md', 'reference.cpp', 'testcases.txt'];
+                : [refFile, 'testcases.txt'];
 
             for (const name of childFiles) {
                 const filePath = path.join(dir, name);

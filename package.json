@@ -175,7 +175,7 @@
       },
       {
         "command": "leetcode.generateHints",
-        "title": "Generate AI Hints & Reference / 生成提示",
+        "title": "Generate AI Reference / 生成参考解法",
         "icon": "$(lightbulb)"
       },
       {
@@ -343,12 +343,12 @@
         "leetcode.anthropicApiKey": {
           "type": "string",
           "default": "",
-          "description": "Anthropic API key for AI-generated hints & reference solutions (sk-ant-...)"
+          "description": "Anthropic API key for AI-generated reference solutions (sk-ant-...)"
         },
         "leetcode.problemsDir": {
           "type": "string",
           "default": "",
-          "description": "Directory to store problems (default: ~/lc-practice)"
+          "description": "Directory to store problems (default: ~/code-coach)"
         },
         "leetcode.hideProblemTitle": {
           "type": "boolean",

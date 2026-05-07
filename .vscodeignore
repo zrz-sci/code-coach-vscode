@@ -14,3 +14,5 @@
 !python/template_generator.py
 !python/teaching_skills.md
 !python/requirements.txt
+.DS_Store
+**/.DS_Store

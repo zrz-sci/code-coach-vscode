@@ -1,6 +1,6 @@
 # Code Coach
 
-A VS Code extension for practicing coding problems with AI-powered hints, progress tracking, and bilingual support (English & Chinese).
+A VS Code extension for practicing coding problems with AI-powered reference solutions, progress tracking, and bilingual support (English & Chinese).
 
 Works with both LeetCode US (leetcode.com) and LeetCode CN (leetcode.cn).
 
@@ -8,7 +8,7 @@ Works with both LeetCode US (leetcode.com) and LeetCode CN (leetcode.cn).
 
 ## Highlights
 
-- **AI-powered study aids** — generate hints and reference solutions with your own Claude API key
+- **AI-powered study aids** — generate reference solutions with your own Claude API key
 - **Progress tracking** with spaced repetition (Ebbinghaus forgetting curve) review schedule
 - **Smart recommendations** — follows your favorite folder order, skips completed problems
 - **Bilingual** — problem descriptions in both English and Chinese
@@ -22,8 +22,7 @@ Works with both LeetCode US (leetcode.com) and LeetCode CN (leetcode.cn).
 - One-click fetch with auto-generated C++ solution template
 
 ### AI-Powered Study Aids
-- **hints.md** — progressive hints, approach analysis, complexity breakdown, interview follow-ups
-- **reference.cpp** — multiple annotated reference solutions with tradeoff comparison
+- **reference.cpp** — thought process, multiple solutions with analysis, common mistakes, interview follow-ups
 - Powered by Claude API (bring your own key)
 
 ### Code & Submit
@@ -50,7 +49,7 @@ Works with both LeetCode US (leetcode.com) and LeetCode CN (leetcode.cn).
 - Configurable display language (Settings > Display Language)
 
 ### Solution Management
-- Organized tree view: each problem has `solution.cpp`, `hints.md`, `reference.cpp`, `testcases.txt`
+- Organized tree view: each problem has `solution.cpp`, `reference.cpp`, `testcases.txt`
 - Reset solution to re-practice from scratch
 - Expandable file tree with syntax-appropriate icons
 
@@ -119,19 +118,19 @@ Open VS Code Settings (`Cmd+,`) and search `leetcode`:
 | `leetcode.pythonPath` | Path to Python 3 interpreter | `python3` |
 | `leetcode.problemsDir` | Directory to store problems | `~/lc-practice` |
 | `leetcode.proxy` | HTTP proxy URL (optional) | _(empty)_ |
-| `leetcode.anthropicApiKey` | Claude API key for AI hints | _(empty)_ |
+| `leetcode.anthropicApiKey` | Claude API key for AI reference | _(empty)_ |
 | `leetcode.hideProblemTitle` | Hide problem title in editor tab | `false` |
 
 You can also access settings from the sidebar: **Session > Settings**.
 
-## AI Hints Generation
+## AI Reference Generation
 
-To generate AI-powered study hints and reference solutions:
+To generate AI-powered reference solutions:
 
 1. Set your API key: **Session > Settings > Set AI API Key**
 2. Enter your Anthropic API key (`sk-ant-...`)
-3. Use **Settings > Re-fetch All Favorites** to batch-generate hints
-4. Each problem gets `hints.md` + `reference.cpp` automatically
+3. Use **Settings > Re-fetch All Favorites** to batch-generate references
+4. Each problem gets a `reference.cpp` with hints, analysis, and code
 
 Without an API key, problems are fetched without AI-generated content.
 

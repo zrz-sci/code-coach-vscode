@@ -10,8 +10,27 @@ import { FavoritesProvider } from './favoritesProvider';
 import { MyListsProvider } from './myListsProvider';
 import { ProblemWebview } from './problemWebview';
 import { LoginWebview } from './loginWebview';
+import { ReferenceCodeLensProvider } from './referenceCodeLensProvider';
 
 let leetcodeService: LeetCodeService;
+
+// Shell argument escaping for terminal.sendText() commands
+function shellEscape(arg: string): string {
+    // Replace single quotes with escaped version, wrap in single quotes
+    return "'" + arg.replace(/'/g, "'\\''") + "'";
+}
+
+// Validate problem slug format (only alphanumeric, hyphens, underscores, dots)
+function isValidSlug(slug: string): boolean {
+    return /^[a-zA-Z0-9][a-zA-Z0-9._-]{0,200}$/.test(slug);
+}
+
+// Validate file path is within expected problems directory
+function isPathWithinDir(filePath: string, baseDir: string): boolean {
+    const resolved = path.resolve(filePath);
+    const resolvedBase = path.resolve(baseDir);
+    return resolved.startsWith(resolvedBase + path.sep) || resolved === resolvedBase;
+}
 let sessionProvider: SessionProvider;
 let problemProvider: ProblemProvider;
 let solutionProvider: SolutionProvider;
@@ -83,6 +102,16 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.window.registerTreeDataProvider('leetcode-favorites', favoritesProvider);
     vscode.window.registerTreeDataProvider('leetcode-my-lists', myListsProvider);
     vscode.window.registerTreeDataProvider('leetcode-my-solutions', solutionProvider);
+
+    // Register CodeLens provider for reference links in solution.cpp
+    const referenceLensProvider = new ReferenceCodeLensProvider();
+    context.subscriptions.push(
+        vscode.languages.registerCodeLensProvider(
+            { pattern: '**/solution.cpp' },
+            referenceLensProvider
+        ),
+        referenceLensProvider
+    );
 
     // Register commands
     context.subscriptions.push(
@@ -195,9 +224,9 @@ export function activate(context: vscode.ExtensionContext) {
             const settings = [
                 { label: '$(globe) Display Language / 显示语言', description: 'Switch between Chinese and English', value: 'lang' },
                 { label: currentHideTitle ? '$(eye) Show Problem Title / 显示题目标题' : '$(eye-closed) Hide Problem Title / 隐藏题目标题', description: currentHideTitle ? 'Currently hidden (blind practice mode)' : 'Hide title for blind practice', value: 'toggle-title' },
-                { label: '$(cloud-download) Re-fetch All Favorites / 重新下载收藏夹', description: 'Fetch all favorite problems + generate AI hints if API key is set', value: 'refetch-favorites' },
+                { label: '$(cloud-download) Re-fetch All Favorites / 重新下载收藏夹', description: 'Fetch all favorite problems + generate AI reference if API key is set', value: 'refetch-favorites' },
                 { label: '$(sync) Re-fetch Local Problems / 重新下载本地题目', description: 'Re-fetch all locally saved problems', value: 'refetch-local' },
-                { label: '$(key) Set AI API Key / 设置 AI Key', description: 'Anthropic API key for generating hints & reference solutions', value: 'apikey' },
+                { label: '$(key) Set AI API Key / 设置 AI Key', description: 'Anthropic API key for generating reference solutions', value: 'apikey' },
             ];
             const choice = await vscode.window.showQuickPick(settings, {
                 placeHolder: 'Select setting to change / 选择要修改的设置'
@@ -242,13 +271,13 @@ export function activate(context: vscode.ExtensionContext) {
                 terminal.show();
 
                 if (apiKey) {
-                    // Has API key: fetch + generate AI hints & reference (key passed via env, not visible in terminal)
-                    terminal.sendText(`${pythonPath} "${scriptPath}"`);
+                    // Has API key: fetch + generate AI reference (key passed via env, not visible in terminal)
+                    terminal.sendText(`${shellEscape(pythonPath)} ${shellEscape(scriptPath)}`);
                 } else {
                     // No API key: fetch only, skip AI generation
-                    terminal.sendText(`${pythonPath} "${scriptPath}" --dry-run`);
+                    terminal.sendText(`${shellEscape(pythonPath)} ${shellEscape(scriptPath)} --dry-run`);
                     vscode.window.showInformationMessage(
-                        'No API key set. Fetching problems only (no AI hints). Set API key in Settings > Set AI API Key.'
+                        'No API key set. Fetching problems only (no AI reference). Set API key in Settings > Set AI API Key.'
                     );
                 }
 
@@ -301,7 +330,11 @@ export function activate(context: vscode.ExtensionContext) {
                 if (!selected || selected.length === 0) return;
 
                 // Fetch selected problems in terminal
-                const slugs = selected.map(s => s.slug).filter(s => s);
+                const slugs = selected.map(s => s.slug).filter(s => s && isValidSlug(s));
+                if (slugs.length === 0) {
+                    vscode.window.showErrorMessage('No valid problem slugs found.');
+                    return;
+                }
                 const toolPath = leetcodeService.getToolPath();
                 const terminal = vscode.window.createTerminal({
                     name: `Re-fetch ${selected.length} problems`,
@@ -309,7 +342,7 @@ export function activate(context: vscode.ExtensionContext) {
                 });
                 terminal.show();
 
-                const cmds = slugs.map(s => `${pythonPath} "${toolPath}" --problems-dir "${problemsDir}" fetch ${s}`).join(' && ');
+                const cmds = slugs.map(s => `${shellEscape(pythonPath)} ${shellEscape(toolPath)} --problems-dir ${shellEscape(problemsDir)} fetch ${shellEscape(s)}`).join(' && ');
                 terminal.sendText(cmds);
 
                 const disposable = vscode.window.onDidCloseTerminal((closedTerminal) => {
@@ -322,14 +355,14 @@ export function activate(context: vscode.ExtensionContext) {
             } else if (choice.value === 'apikey') {
                 const currentKey = await getApiKey(context);
                 const key = await vscode.window.showInputBox({
-                    prompt: 'Enter Anthropic API Key (for AI-generated hints & reference solutions)',
+                    prompt: 'Enter Anthropic API Key (for AI-generated reference solutions)',
                     placeHolder: 'sk-ant-...',
                     value: currentKey,
                     password: true
                 });
                 if (key !== undefined) {
                     await setApiKey(context, key);
-                    vscode.window.showInformationMessage(key ? 'API key saved securely! Re-fetch Favorites will now generate AI hints.' : 'API key cleared.');
+                    vscode.window.showInformationMessage(key ? 'API key saved! Re-fetch Favorites will now generate AI reference.' : 'API key cleared.');
                 }
             }
         }),
@@ -601,7 +634,7 @@ export function activate(context: vscode.ExtensionContext) {
             mockState.problemTitle = problem.title;
             mockState.solutionPath = problem.solutionPath;
 
-            // Hide hints/reference
+            // Hide reference during mock
             solutionProvider.setMockMode(true);
 
             // Create status bar timer
@@ -640,7 +673,7 @@ export function activate(context: vscode.ExtensionContext) {
             }
 
             vscode.window.showInformationMessage(
-                `Mock started: #${problem.id}. ${problem.title} [${problem.difficulty}] — ${timeChoice.value} min. Hints hidden.`
+                `Mock started: #${problem.id}. ${problem.title} [${problem.difficulty}] — ${timeChoice.value} min. Reference hidden.`
             );
         }),
 
@@ -677,7 +710,7 @@ export function activate(context: vscode.ExtensionContext) {
 
             const result = passed ? '✅ Accepted' : '❌ Not submitted / Not accepted';
 
-            // Restore hints
+            // Restore reference
             mockState.active = false;
             solutionProvider.setMockMode(false);
             sessionProvider.refresh();
@@ -689,7 +722,10 @@ export function activate(context: vscode.ExtensionContext) {
                 'Open Reference'
             ).then(choice => {
                 if (choice === 'Open Reference') {
-                    const refPath = path.join(path.dirname(mockState.solutionPath), 'reference.cpp');
+                    const dir = path.dirname(mockState.solutionPath);
+                    const refNewPath = path.join(dir, 'reference_new.cpp');
+                    const refOldPath = path.join(dir, 'reference.cpp');
+                    const refPath = fs.existsSync(refNewPath) ? refNewPath : refOldPath;
                     if (fs.existsSync(refPath)) {
                         vscode.workspace.openTextDocument(refPath).then(doc => {
                             vscode.window.showTextDocument(doc, vscode.ViewColumn.Beside);
@@ -720,7 +756,7 @@ export function activate(context: vscode.ExtensionContext) {
             }
 
             const confirm = await vscode.window.showWarningMessage(
-                `Reset solution: ${label}? Your code will be cleared back to the initial template. Hints and reference will be kept.`,
+                `Reset solution: ${label}? Your code will be cleared back to the initial template. Reference will be kept.`,
                 'Yes, Reset', 'Cancel'
             );
 
@@ -778,7 +814,7 @@ export function activate(context: vscode.ExtensionContext) {
             const apiKey = await getApiKey(context);
             if (!apiKey) {
                 const choice = await vscode.window.showWarningMessage(
-                    'Anthropic API key required for AI hints. Set it now?',
+                    'Anthropic API key required for AI reference. Set it now?',
                     'Set API Key', 'Cancel'
                 );
                 if (choice === 'Set API Key') {
@@ -809,12 +845,12 @@ export function activate(context: vscode.ExtensionContext) {
             const problemsDir = leetcodeService.getProblemsDir();
 
             const terminal = vscode.window.createTerminal({
-                name: 'Generate Hints',
+                name: 'Generate Reference',
                 cwd: path.dirname(toolPath),
                 env: { 'ANTHROPIC_API_KEY': apiKey }
             });
             terminal.show();
-            terminal.sendText(`${pythonPath} "${toolPath}" --problems-dir "${problemsDir}" generate-hints "${targetPath}"`);
+            terminal.sendText(`${shellEscape(pythonPath)} ${shellEscape(toolPath)} --problems-dir ${shellEscape(problemsDir)} generate-reference ${shellEscape(targetPath)}`);
 
             // Refresh solution tree when terminal closes
             const disposable = vscode.window.onDidCloseTerminal((closedTerminal) => {
@@ -933,14 +969,16 @@ export function activate(context: vscode.ExtensionContext) {
     const watcher = vscode.workspace.createFileSystemWatcher(
         new vscode.RelativePattern(problemsDir, '**/problem_info.json')
     );
-    watcher.onDidChange(() => {
-        solutionProvider.refresh();
-        sessionProvider.refresh();
-    });
-    watcher.onDidCreate(() => {
-        solutionProvider.refresh();
-        sessionProvider.refresh();
-    });
+    let debounceTimer: NodeJS.Timeout | undefined;
+    const debouncedRefresh = () => {
+        if (debounceTimer) clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            solutionProvider.refresh();
+            sessionProvider.refresh();
+        }, 500);
+    };
+    watcher.onDidChange(debouncedRefresh);
+    watcher.onDidCreate(debouncedRefresh);
     context.subscriptions.push(watcher);
 
     // Initial refresh
